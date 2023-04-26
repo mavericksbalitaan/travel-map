@@ -1,0 +1,60 @@
+.worldmap__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9dc3f9;
+  height: 100vh;
+  position: relative;
+}
+
+.worldmap__container path {
+  stroke: currentColor;
+  stroke-width: 0.25;
+  transition: fill 0.3s;
+}
+
+.worldmap__container path:hover {
+  fill: #999;
+  stroke: goldenrod;
+  stroke-width: 1;
+}
+
+.worldmap__container path:active {
+  fill: #fff;
+  transition: fill 0.3s;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+
+  input {
+    padding: 0.25rem 1rem;
+  }
+}
+
+#saveMap {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 10%;
+}
+
+.svgtext {
+  text-orientation: upright;
+  font-size: 1rem;
+  fill: #fff;
+  dominant-baseline: middle;
+}

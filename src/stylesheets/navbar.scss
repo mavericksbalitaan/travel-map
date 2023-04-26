@@ -1,0 +1,99 @@
+.navbar__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #242424;
+  color: #fff;
+  padding: 0.5rem;
+  z-index: 1;
+
+  ul {
+    list-style-type: none;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row;
+
+    li {
+      color: #fff;
+      margin: 0 1rem;
+      transition: 0.2s;
+
+      &:hover {
+        color: goldenrod;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .active {
+    color: goldenrod;
+  }
+}
+
+.mobile_header {
+  background-color: #242424;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  a {
+  text-decoration: none;
+  }
+
+  h5 {
+    margin: 0 auto 0 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.mobile_menu {
+  width: 50%;
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  transition: 0.2s;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.world_map, .us_map, .ph_map, .africa_map {
+  position: relative;
+}
+
+.world_map__lists, .us_map__lists, .ph_map__lists, .africa_map__lists {
+  width: 100%;
+  background-color: #242424;
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    overflow-x: scroll;
+  }
+}

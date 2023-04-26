@@ -1,0 +1,17 @@
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 30%;
+    margin: auto 0;
+  }
+}
