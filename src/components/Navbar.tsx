@@ -156,13 +156,13 @@ const Navbar = () => {
                   <NavLink to="/regions">Display Regions</NavLink>
                 </li>
               </div>
-              <li className="ph_map">PH</li>
+              <li className="ph_map">Philippines</li>
               <div className="ph_map__lists">
                 <li>
-                  <NavLink to="/ph_map">PH Map</NavLink>
+                  <NavLink to="/ph_map">Philippine Map</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/visitedcities">Visited Cities</NavLink>
+                  <NavLink to="/visitedcities">Visited Places</NavLink>
                 </li>
                 <li>
                   <NavLink to="/provinces">Display Regions</NavLink>

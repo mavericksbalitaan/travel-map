@@ -50,7 +50,7 @@ const Provinces = () => {
         </svg>
         <div className="legend">
           <h4>
-            PH Regions
+            Regions of the Philippines
           </h4>
           <ol>
             {regions.map((region, idx) => {

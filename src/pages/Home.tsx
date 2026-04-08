@@ -10,25 +10,35 @@ const Home = () => {
         <div className="howto__container">
           <h1>How To Use</h1>
           <ul>
-            <li>Go to your preferred map.</li>
-            <li>Either input or click the location.</li>
-            <p>
-              ** A list of visited locations will be updated appropriately. You
-              can then save the image.
-            </p>
+ <li>Select a location.</li>
+    <li>
+      Use the input field or click on a country you have recently visited.
+    </li>
+    <li>
+      Your visited countries will be automatically added to the list.
+    </li>
+    <li>
+      Once finished, you can save the generated image if desired.
+    </li>
           </ul>
           <hr />
         </div>
         <div className="about__container">
           <img src={profile} alt="My Profile Picture" />
-          <p>
-            Hi there! <br /> My name is Mavericks and I am a Filipino full-stack
-            web developer. <br />
-            One of my goals in life is to travel around the world. If you have
-            any comments, please get in touch! I'll be more than happy to hear
-            your thoughts on my <a href="https://mavericks-db.tech" target="_blank">
-              projects
-            </a>. Cheers and happy coding!
+					<p>
+  Hello, my name is Mavericks.
+  <br />
+  I am a Full Stack Web Developer.
+  <br />
+  One of my personal aspirations is to travel around the world with my family.
+  <br /><br />
+  If you have any comments or feedback, please feel free to get in touch. I would greatly appreciate hearing your thoughts on my
+  <a href="https://mavericksb.com" target="_blank">
+	{" "}
+    projects
+  </a>.
+  <br />
+  Thank you, and happy coding.
           </p>
         </div>
       </div>
