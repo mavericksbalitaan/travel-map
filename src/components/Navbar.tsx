@@ -132,7 +132,21 @@ const Navbar = () => {
               <li className="home">
                 <NavLink to="/home">Home</NavLink>
               </li>
-              <li className="world_map">World</li>
+
+ <li className="ph_map">Philippine Map</li>
+              <div className="ph_map__lists">
+                <li>
+                  <NavLink to="/ph_map">Philippines</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/visitedcities">Visited Places</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/provinces">Display Regions</NavLink>
+                </li>
+              </div>
+
+              <li className="world_map">The World</li>
               <div className="world_map__lists">
                 <li>
                   <NavLink to="/world_map">World Map</NavLink>
@@ -144,10 +158,10 @@ const Navbar = () => {
                   <NavLink to="/continents">Display Continents</NavLink>
                 </li>
               </div>
-              <li className="us_map">US</li>
+              <li className="us_map">USA</li>
               <div className="us_map__lists">
                 <li>
-                  <NavLink to="/us_map">US Map</NavLink>
+                  <NavLink to="/us_map">USA Map</NavLink>
                 </li>
                 <li>
                   <NavLink to="/visitedstates">Visited States</NavLink>
@@ -156,19 +170,7 @@ const Navbar = () => {
                   <NavLink to="/regions">Display Regions</NavLink>
                 </li>
               </div>
-              <li className="ph_map">Philippines</li>
-              <div className="ph_map__lists">
-                <li>
-                  <NavLink to="/ph_map">Philippine Map</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/visitedcities">Visited Places</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/provinces">Display Regions</NavLink>
-                </li>
-              </div>
-              <li className="africa_map">Africa</li>
+                           <li className="africa_map">Africa</li>
               <div className="africa_map__lists">
                 <li>
                   <NavLink to="/africa_map">Africa Map</NavLink>

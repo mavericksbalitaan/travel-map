@@ -24,7 +24,7 @@ const VisitedCountries = () => {
           {continents.map((continent, idx) => {
             return (
               <ul className="visited__container--indivlist" key={idx}>
-                <h2>{continent}</h2>
+                <h2>{continent.toUpperCase()}</h2>
                 {state.country_list?.map((el, idx) => {
                   if (el.continent === `${continent}`) {
                     return (

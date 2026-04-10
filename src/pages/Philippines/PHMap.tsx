@@ -121,16 +121,14 @@ const USMap = () => {
       </div>
       <div className="input">
         <form onSubmit={(e) => submitHandler(e)}>
-          <TextField
-            id="filled-basic" variant="filled"
+          <input
             placeholder="Please input a city..."
             onChange={(e: any) => setPHCity(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))}
             ref={inputRef}
-            margin="normal"
-            sx={{ backgroundColor: "#fff" }}
           />
+					<Button variant="contained" size="small" sx={{ backgroundColor: 'green'}} onClick={(e) => submitHandler(e)} >Enter</Button>`
         </form>
-        <Button variant="contained" onClick={onButtonClick} id="saveImg">Save Map</Button>
+        <Button variant="contained" onClick={onButtonClick} id="saveImg" sx={{ marginTop: '10px'}}>Save Map</Button>
       </div>
     </>
   );

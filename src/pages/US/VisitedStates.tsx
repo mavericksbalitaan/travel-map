@@ -16,7 +16,7 @@ const VisitedStates = () => {
           {regions.map((region, idx) => {
             return (
               <ul className="visited__container--indivlist" key={idx}>
-                <h2>{region}</h2>
+                <h2>{region.toUpperCase()}</h2>
                 {state.us_states?.map((el, idx) => {
                   if (el.region === `${region}`) {
                     return (
