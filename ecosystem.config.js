@@ -3,11 +3,9 @@ module.exports = {
     {
       name: "react-travelmap",
       script: "npx",
-      args: "serve -s build",
-      watch: true,
+      args: "serve -s build -p 5005",
       env: {
-        NODE_ENV: "production",
-        PORT: 5005,
+	      NODE_ENV: "production"
       },
     },
   ],
